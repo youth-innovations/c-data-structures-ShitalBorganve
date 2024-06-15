@@ -1,4 +1,5 @@
 #include "caesar_cipher.h"
+#include "ctype.h"
 
 void caesar_encrypt(char *message, int key) {
     if (key < 0) {
