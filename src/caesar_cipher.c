@@ -1,20 +1,14 @@
 #include "caesar_cipher.h"
-#include "ctype.h"
 
 void caesar_encrypt(char *message, int key) {
-    if (key < 0) {
-        key = 26 + (key % 26);  // Normalize negative keys
-    }
-    for (int i = 0; message[i] != '\0'; i++) {
-        char c = message[i];
-        if (isalpha(c)) {
-            char base = islower(c) ? 'a' : 'A';
-            message[i] = (c - base + key) % 26 + base;
-        }
-    }
+    // Please remove this placeholder and implement Caesar encryption here
+    // Remember to remove or replace this comment as well
+    return;
 }
 
 void caesar_decrypt(char *message, int key) {
-    caesar_encrypt(message, -key);
+    // Please remove this placeholder and implement Caesar decryption here
+    // Remember to remove or replace this comment as well
+    return;
 }
 
